@@ -1,4 +1,0 @@
-image: nginx
-home: /usr/share/nginx/html
-ports:
-  - 80/tcp

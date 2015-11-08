@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ ! ${DEPLOY_BOX_NAME} ]; then
+    echo "ERROR - DEPLOY_BOX_NAME variable should exist for deployment."
+    exit 1
+fi
+
+if [ ! ${DEPLOY_DOCKER_HOST} ]; then
+    echo "ERROR - DEPLOY_DOCKER_HOST variable should exist for deployment."
+    exit 1
+fi
+
+export DOCKER_HOST=${DEPLOY_DOCKER_HOST}
+export DATA_LOCATION=/tmp/ravaj-${DEPLOY_BOX_NAME}
+export PROJECT_NAME=${DEPLOY_BOX_NAME}
+
+ROOT=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../..
+
+docker-compose -f ${ROOT}/devops/production.yml -p ${DEPLOY_BOX_NAME} pull
+docker-compose -f ${ROOT}/devops/production.yml -p ${DEPLOY_BOX_NAME} build
+docker-compose -f ${ROOT}/devops/production.yml -p ${DEPLOY_BOX_NAME} up -d --force-recreate
