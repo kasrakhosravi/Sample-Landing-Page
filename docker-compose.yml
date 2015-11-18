@@ -1,14 +1,5 @@
 web:
-  image: nginx:latest
+  build: .
   restart: always
   environment:
     SERVICE_80_NAME: ${POD_NAME}/http
-  volumes_from:
-    - data
-  ports:
-    - 80
-
-data:
-  build: .
-  command: tail -f /dev/null
-  restart: always
