@@ -2,7 +2,7 @@ web:
   image: nginx:latest
   restart: always
   environment:
-    SERVICE_80_NAME: ${PROJECT_NAME}/http
+    SERVICE_80_NAME: ${POD_NAME}/http
   volumes_from:
     - data
   ports:
