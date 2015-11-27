@@ -22,62 +22,47 @@
     top: 0;
     width: auto;
 }
-.cover{
+.dark-cover{
+    background-color: rgba(0,0,0,.8);
     position: fixed;
-    opacity: 1;
-
     left: 0px;
     top: 0px;
     width: 100%;
     height: 100%;
     z-index: 1;
 }
-.cover.black{
-    background-color: rgba(0,0,0,.6);
-}
-.container-table {
-    display: table;
-}
-.vertical-center-row {
-    display: table-cell;
-    vertical-align: middle;
-}
 
-.logo img {
+.logo img{
     display:block;
-    margin: 50px auto;
-    width: 220px;
+    margin: 70px auto;
+    width: 210px;
+    margin-bottom: 120px;
 }
-.main {
+.main{
     color: white;
 }
 
 /*****************
     Content part
 ******************/
-.content {
-    margin-top: 100px;
-}
 .products {
     margin-top: 20px;
 }
-h1 {
+.motto {
     font-family: 'IranianSans';
+    font-size: 35px;
+    padding-bottom: 15px;
 }
 .btn{
-    border-width: 2px;
-    height: 60px;
+    font-family: 'IranianSans';
     color: white;
     background-color: rgba(0,0,0,.0);
-    font-weight: 400;
-    padding: 8px 16px;
-    font-family: 'IranianSans';
 }
 .btn-lg{
     border-radius: 4px;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 14px 60px;
+    border-width: 2px;
+    height: 70px;
+    font-size: 25px;
 }
 .btn-default{
     color: white;
@@ -87,4 +72,17 @@ h1 {
     color: white;
     border-color: #29B163;
     background-color: #29B163;
+}
+.recurring {
+    width: 48%;
+    float: left;
+    display: table;
+}
+.e-commerce {
+    width: 48%;
+    float: right;
+    display: table;
+}
+.btn-txt{
+    display: table-cell; vertical-align: middle;
 }
