@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'IranianSansBold';
+    src: url('fonts/IranianSansBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IranianSans';
+    src: url('fonts/IranianSansRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .main{
     background-position: center;
     background-size: cover;
@@ -8,7 +21,6 @@
     position: absolute;
     top: 0;
     width: auto;
-    background-color: rgba(0,0,0,0.6);
 }
 .cover{
     position: fixed;
@@ -49,6 +61,9 @@
 .products {
     margin-top: 20px;
 }
+h1 {
+    font-family: 'IranianSans';
+}
 .btn{
     border-width: 2px;
     height: 60px;
@@ -56,6 +71,7 @@
     background-color: rgba(0,0,0,.0);
     font-weight: 400;
     padding: 8px 16px;
+    font-family: 'IranianSans';
 }
 .btn-lg{
     border-radius: 4px;
@@ -71,11 +87,4 @@
     color: white;
     border-color: #29B163;
     background-color: #29B163;
-}
-/************
-    Footer
-*************/
-.footer {
-    text-align: center;
-    bottom: 0;
 }
