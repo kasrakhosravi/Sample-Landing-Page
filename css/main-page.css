@@ -1,12 +1,16 @@
 @font-face {
     font-family: 'IranianSansBold';
-    src: url('fonts/IranianSansBold.ttf') format('truetype');
+    src: url('../fonts/IranianSansBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'IranianSans';
-    src: url('fonts/IranianSansRegular.ttf') format('truetype');
+    src: url('../fonts/IranianSansRegular.ttf') format('truetype');
+    src: url('../fonts/IranianSansRegular.eot') format('eot');
+    src: url('../fonts/IranianSansRegular.otf') format('etf');
+    src: url('../fonts/IranianSansRegular.svg') format('svg');
+    src: url('../fonts/IranianSansRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -50,7 +54,7 @@
 }
 .motto {
     font-family: 'IranianSans';
-    font-size: 35px;
+    font-size: 32px;
     padding-bottom: 15px;
 }
 .btn{
