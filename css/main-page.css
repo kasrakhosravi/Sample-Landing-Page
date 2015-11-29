@@ -27,7 +27,7 @@
     width: auto;
 }
 .dark-cover{
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(37,37,37,0.6);
     position: fixed;
     left: 0px;
     top: 0px;
