@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('../fonts/IRANSansWeb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IRANSansWeb_Bold';
+    src: url('../fonts/IRANSansWeb_Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.index {
+    font-family: 'IRANSansWeb';
+}
+
+.marketing-button {
+    background-color: #048238;
+    border: 0;
+    border-radius: 3px;
+    color: #f9f2f4;
+    font-size: 1.125em;
+    padding: 0.77778em 1.66667em;
+}
+
+.marketing-button:active {
+    background-color: #0db251;
+    color: #f9f2f4;
+    text-decoration: none;
+}
+
+.marketing-button:hover {
+    background-color: #0db251;
+    color: #f9f2f4;
+    text-decoration: none;
+}
+
+.header {
+    background: url(../images/backgrounds/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+.intro-text {
+    padding-top:100px;
+    float: right;
+}
+
+.intro-text .intro-lead-in {
+    font-family: 'IRANSansWeb_Bold';
+    color: #f9f2f4;
+    margin-bottom: 0.5em;
+}
+
+.intro-text .intro-call-to-action {
+    font-family: 'IRANSansWeb_Bold';
+    float: right;
+}
+
+.main .main-content {
+    padding-top: 50px;
+}
+
+.main .main-asset {
+    float: right;
+}
+
+.main .main-heading {
+    font-family: 'IRANSansWeb_Bold';
+    margin-bottom: 0.5em;
+}
+
+.main .ravaj-theme-preview {
+    margin-top: -200px;
+    height: 600px;
+}
+
+.main .ravaj-app-preview {
+    width: 608px;
+}
+
+.signup {
+    background-color: #048238;
+    height: 235px;
+    text-align: center;
+}
+
+.signup-heading {
+    padding-top:117px;
+    font-family: 'IRANSansWeb_Bold';
+    color: #f9f2f4;
+}
+
+.team {
+    background-image: url(../images/backgrounds/team-bg.jpg);
+    height: 484px;
+    text-align: center;
+}
+
+.team-heading {
+    padding-top:242px;
+    font-family: 'IRANSansWeb_Bold';
+    color: #f9f2f4;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer .footer-logo {
+    height: 250px;
+    width: 250px;
+}
+
+.footer-description {
+    margin-top: -50px;
+}
