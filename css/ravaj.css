@@ -12,56 +12,110 @@
     font-style: normal;
 }
 
-.index {
+body {
+    font-size: 15px;
     font-family: 'IRANSansWeb';
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em
+}
+
+p {
+    font-size: 1em;
 }
 
 .marketing-button {
     background-color: #048238;
     border: 0;
-    border-radius: 3px;
-    color: #f9f2f4;
+    border-radius: 0.2em;
+    color: #ffffff;
     font-size: 1.125em;
     padding: 0.77778em 1.66667em;
 }
 
 .marketing-button:active {
     background-color: #0db251;
-    color: #f9f2f4;
+}
+
+.marketing-button:focus {
+    background-color: #0db251;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .marketing-button:hover {
     background-color: #0db251;
-    color: #f9f2f4;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .header {
-    background: url(../images/backgrounds/header-bg.jpg);
-    background-position: center;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url(../images/backgrounds/header-bg.jpg)
+        center;
     background-size: cover;
     height: 550px;
 }
 
-.intro-text {
-    padding-top:100px;
-    float: right;
+.header .navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.intro-text .intro-lead-in {
+.header .navbar-header {
+    float: left;
+}
+
+.header .navbar-logo {
+    height: 50px;
+}
+
+.header .navbar-nav > li > a {
+    color: #a9a9a9;
     font-family: 'IRANSansWeb_Bold';
-    color: #f9f2f4;
+    font-size: 1.125em;
+}
+
+.header .navbar-nav > li > a:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.header .navbar-nav > li > a:hover {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.header .intro {
+    padding-top: 70px;
+}
+
+.header .intro-text {
+    color: #ffffff;
+    font-family: 'IRANSansWeb_Bold';
     margin-bottom: 0.5em;
 }
 
-.intro-text .intro-call-to-action {
-    font-family: 'IRANSansWeb_Bold';
+.header .intro-call-to-action {
     float: right;
+    font-family: 'IRANSansWeb_Bold';
 }
 
 .main .main-content {
-    padding-top: 50px;
+    padding-top: 1.5em;
 }
 
 .main .main-asset {
@@ -88,22 +142,37 @@
     text-align: center;
 }
 
+.signup .signup-form {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .signup-heading {
-    padding-top:117px;
+    color: #ffffff;
     font-family: 'IRANSansWeb_Bold';
-    color: #f9f2f4;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .team {
-    background-image: url(../images/backgrounds/team-bg.jpg);
+    background:
+        linear-gradient(
+                rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.7)
+        ),
+        url(../images/backgrounds/team-bg.jpg)
+        center;
     height: 484px;
+    line-height: 484px;
     text-align: center;
+    overflow: hidden;
 }
 
 .team-heading {
-    padding-top:242px;
     font-family: 'IRANSansWeb_Bold';
-    color: #f9f2f4;
+    font-size: 2em;
+    color: #ffffff;
 }
 
 .footer {
@@ -111,10 +180,11 @@
 }
 
 .footer .footer-logo {
-    height: 250px;
-    width: 250px;
+    margin-top: 20px;
+    height: 69px;
+    width: 169px;
 }
 
 .footer-description {
-    margin-top: -50px;
+    margin-top: 10px;
 }
